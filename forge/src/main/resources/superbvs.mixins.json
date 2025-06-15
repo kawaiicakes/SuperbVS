@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "io.github.kawaiicakes.superbvs.forge.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "BlockGetterMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

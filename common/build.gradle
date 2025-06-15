@@ -3,6 +3,8 @@ architectury {
 }
 
 dependencies {
+    annotationProcessor(implementation("io.github.llamalad7:mixinextras-common:$mixin_extras_version"))
+
     // We depend on Fabric Loader here to use the Fabric @Environment annotations,
     // which get remapped to the correct annotations on each platform.
     // Do NOT use other classes from Fabric Loader.
