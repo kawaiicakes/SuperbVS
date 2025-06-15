@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+issueTrackerURL = "https://github.com/kawaiicakes/SuperbVS/issues"
+license = "MIT"
+
+[[mods]]
+modId = "superbvs"
+version = "${version}"
+displayName = "Superb VS"
+authors = "kawaiicakes"
+description = '''
+Fixes gun hitreg and other incompatibilities between Superb Warfare and Valkyrien Skies.
+'''
+logoFile = "icon.png"
+
+[[dependencies.superbvs]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.superbvs]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.superbvs]]
+modId = "valkyrienskies"
+mandatory = true
+versionRange = "[${vs2_version},)"
+ordering = "AFTER"
+side = "BOTH"
