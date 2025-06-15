@@ -3,7 +3,7 @@
   "package": "io.github.kawaiicakes.superbvs.forge.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "BlockGetterMixin"
+    "BugFixUtilMixin"
   ],
   "client": [],
   "injectors": {
