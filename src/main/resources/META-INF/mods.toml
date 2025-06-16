@@ -1,0 +1,33 @@
+modLoader = "javafml"
+issueTrackerURL = "https://github.com/kawaiicakes/SuperbVS/issues"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+
+[[mods]]
+modId = "superbvs"
+version = "${mod_version}"
+displayName = "Superb VS"
+authors = "${mod_authors}"
+description = "${mod_description}"
+logoFile = "icon.png"
+
+[[dependencies.superbvs]]
+modId = "forge"
+mandatory = true
+versionRange = "${forge_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.superbvs]]
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.superbvs]]
+modId = "superbwarfare"
+mandatory = true
+versionRange = "[0.7.4,)"
+ordering = "NONE"
+side = "BOTH"

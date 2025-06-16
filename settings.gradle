@@ -2,34 +2,15 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         maven {
-            url = "https://maven.fabricmc.net/"
-            name = "Fabric"
+            name = 'MinecraftForge'
+            url = 'https://maven.minecraftforge.net/'
         }
         maven {
-            url = "https://repo.spongepowered.org/repository/maven-public/"
-            name = "Sponge Snapshots"
-        }
-        maven {
-            url = "https://maven.minecraftforge.net"
-            name = "Forge"
-        }
-        maven {
-            url = "https://maven.architectury.dev/"
-            name = "Architectury"
-        }
-    }
-
-    resolutionStrategy {
-        eachPlugin {
-            // If we request Forge, actually give it the correct artifact.
-            if (requested.id.id == "net.minecraftforge.gradle") {
-                useModule("${requested.id}:ForgeGradle:${requested.version}")
-            }
+            url = 'https://maven.parchmentmc.org'
         }
     }
 }
 
-rootProject.name = 'superbvs'
-
-include 'common'
-include 'forge'
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.5.0'
+}
