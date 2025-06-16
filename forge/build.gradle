@@ -50,7 +50,7 @@ dependencies {
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionForge')
 
-    implementation "thedarkcolour:kotlinforforge:$kff_version"
+    modLocalRuntime "thedarkcolour:kotlinforforge:$kff_version"
 
     modImplementation "curse.maven:superb-warfare-1218165:6633653"
 
@@ -60,6 +60,11 @@ dependencies {
     implementation("org.valkyrienskies.core:api-game:$vs_core_version")
     implementation("org.valkyrienskies.core:util:$vs_core_version")
     implementation("org.valkyrienskies.core:impl:$vs_core_version")
+
+    modLocalRuntime "software.bernie.geckolib:geckolib-forge-${minecraft_version}:${geckolib_version}"
+    modLocalRuntime "com.eliotlash.mclib:mclib:20"
+
+    modLocalRuntime "top.theillusivec4.curios:curios-forge:${curios_version}"
 }
 
 processResources {
