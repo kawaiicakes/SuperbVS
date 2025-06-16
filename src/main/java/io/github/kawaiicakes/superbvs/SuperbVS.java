@@ -7,7 +7,7 @@ import org.apache.logging.log4j.Logger;
 @Mod(SuperbVS.MOD_ID)
 public class SuperbVS {
     public static final String MOD_ID = "superbvs";
-    public static final Logger LOGGER = LogManager.getLogger(SuperbVS.class);
+    public static final Logger LOGGER = LogManager.getLogger("Superb VS");
 
     public SuperbVS() {
 
