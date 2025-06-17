@@ -31,3 +31,10 @@ mandatory = true
 versionRange = "[0.7.4,)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.superbvs]]
+modId = "valkyrienskies"
+mandatory = true
+versionRange = "[2.1.0,)"
+ordering = "NONE"
+side = "BOTH"
