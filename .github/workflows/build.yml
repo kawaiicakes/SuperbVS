@@ -37,4 +37,4 @@ jobs:
         with:
           name: Artifacts
           path: |
-            forge/build/libs/
+            build/libs/
